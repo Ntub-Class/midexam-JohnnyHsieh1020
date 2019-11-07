@@ -8,9 +8,12 @@ let checkId = function (id: string) {
     let first = Number(id[0]);
     let second = Number(id[1]);
     let third = Number(id[2]);
-    let count = 0;
+    let count = first * 10 + second * 9 + third * 8;
 
-    count = first * 10 + second * 9 + third * 8
+    if (id.length > 3 || first === 0) {
+        console.log("輸入格式錯誤")
+        return
+    }
 
     if (count % 5 === 0) {
         console.log("合法")
