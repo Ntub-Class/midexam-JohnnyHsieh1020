@@ -4,6 +4,14 @@
 // 輸出說明: 請回傳出現次數
 
 let calcWord = function (content: string, keyword: string) {
+    let ans = 0;
+    for (let i of content) {
+        //console.log(a)
+        if (i === keyword) {
+            ans += 1;
+        }
+    }
+    return ans
 
 }
 

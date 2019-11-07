@@ -5,7 +5,18 @@
 // 輸出說明: 請直接console.log出是否合法
 
 let checkId = function (id: string) {
+    let first = Number(id[0]);
+    let second = Number(id[1]);
+    let third = Number(id[2]);
+    let count = 0;
 
+    count = first * 10 + second * 9 + third * 8
+
+    if (count % 5 === 0) {
+        console.log("合法")
+    } else {
+        console.log("不合法")
+    }
 }
 
 checkId('425') // 不合法

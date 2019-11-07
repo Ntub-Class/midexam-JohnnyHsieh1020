@@ -6,7 +6,18 @@
 
 
 let calc = function (calcString: string) {
+    let first_value = Number(calcString[0]);
+    let second_value = Number(calcString[2]);
 
+    if (calcString.includes('+')) {
+        console.log(first_value + second_value);
+    } else if (calcString.includes('-')) {
+        console.log(first_value - second_value);
+    } else if (calcString.includes('*')) {
+        console.log(first_value * second_value);
+    } else {
+        console.log(first_value / second_value);
+    }
 }
 
 calc('8*2')
