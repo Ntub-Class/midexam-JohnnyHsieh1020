@@ -12,7 +12,6 @@ let calcWord = function (content: string, keyword: string) {
         }
     }
     return ans
-
 }
 
 console.log(calcWord('Abcdaaeafga', 'a')) // 4
